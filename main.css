@@ -122,8 +122,27 @@ button:active {
     align-self: center;
 }
 
+@media screen and (max-width: 700px) {
+    section > video {
+        height: auto;
+        width: 300px;
+        max-height: 150px;
+        max-width: 100%;
+    }
 
+    nav {
+        padding: 10px 15px 10px 15px;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    section > video {
+        height: auto;
+        width: 600px;
+        max-height: 300px;
+        max-width: 100%;
+    }
+}
 
 
 
