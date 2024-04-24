@@ -75,12 +75,14 @@
     <footer>
         <div>
             <span></span>
-            <form>
-                <fieldset>
-                    <input type="radio">Click this<br>
-                    <input type="checkbox">Check this<br>
-                    <input type="text"> Type in here<br>
-                    <input type="date"> Select a date<br>
+            <form id="form1">
+                <fieldset class="input-zone1">
+                    <input type="radio" id="form-radio">
+                    <label>Click this</label>
+                    <input type="checkbox" id="form-checkbox">
+                    <label>Check this</label>
+                    <input type="text"> Type in here
+                    <input type="date"> Select a date
                     <select>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -92,7 +94,33 @@
                         <option value="blue">Blue</option>
                     </datalist>
                     <br>
-                    <textarea>Type something here</textarea> <br>
+                    <textarea>Type something here</textarea>
+                    <button>Submit Form</button>
+                </fieldset>
+            </form>
+
+            <form id="form2">
+                <fieldset class="input-zone2">
+                    <input type="radio" id="form-radio">
+                    <label>Click this</label>
+                    <input type="checkbox" id="form-checkbox">
+                    <label>Check this</label>
+                    <input type="text"> 
+                    <label>Type in here</label>
+                    <input type="date">
+                    <label>Select a date</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <datalist>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </datalist>
+                    <br>
+                    <textarea>Type something here</textarea>
                     <button>Submit Form</button>
                 </fieldset>
             </form>

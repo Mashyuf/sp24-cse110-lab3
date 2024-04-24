@@ -1,3 +1,7 @@
+* {
+    margin: 5px;
+}
+
 :root {
     --new-color: lightyellow;
 }
@@ -20,6 +24,11 @@ h3 {
     color: rgb(0,255,0);
     background-color: aliceblue;
 
+}
+
+h1 ~ h3 {
+    position: sticky;
+    top: 0;
 }
 
 p {
@@ -54,3 +63,63 @@ section > video {
     max-height: 500px;
     max-width: 100%;
 }
+
+input[type="checkbox"] {
+    accent-color: lightgreen;
+}
+
+button:hover {
+    color: grey;
+}
+
+button:active {
+    color: white;
+    background-color: red;
+    border-width: 0.2em;
+    border-style: solid;
+}
+
+.input-zone1 {
+    display: flex;
+    position: static;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-zone1 > input[type="radio"] {
+    display: none;  
+}
+
+.input-zone1 #form-radio + label {
+    display: none;
+}
+
+.input-zone1 select, .input-zone1 textarea, .input-zone1 datalist {
+    flex-grow: 5;
+}
+
+.input-zone2 {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 40% 50% 25%;
+}
+
+.input-zone2 button {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.input-zone2 label {
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
